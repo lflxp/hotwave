@@ -1,0 +1,68 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - pipelineruns
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - pipelineruns/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - playbookruns
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - playbookruns/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - taskruns
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - devops.hotwave.io
+  resources:
+  - taskruns/status
+  verbs:
+  - get
+  - patch
+  - update

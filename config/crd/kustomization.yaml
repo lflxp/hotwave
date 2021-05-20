@@ -2,14 +2,14 @@
 # since it depends on service name and namespace that are out of this kustomize package.
 # It should be run by config/default
 resources:
-- bases/hotwave.io.hotwave.io_playbooks.yaml
-- bases/hotwave.io.hotwave.io_pipelines.yaml
-- bases/hotwave.io.hotwave.io_pipelineruns.yaml
-- bases/hotwave.io.hotwave.io_playbookruns.yaml
-- bases/hotwave.io.hotwave.io_tasks.yaml
-- bases/hotwave.io.hotwave.io_taskruns.yaml
-- bases/hotwave.io.hotwave.io_actions.yaml
-- bases/hotwave.io.hotwave.io_templates.yaml
+- bases/devops.hotwave.io_playbooks.yaml
+- bases/devops.hotwave.io_pipelines.yaml
+- bases/devops.hotwave.io_pipelineruns.yaml
+- bases/devops.hotwave.io_playbookruns.yaml
+- bases/devops.hotwave.io_tasks.yaml
+- bases/devops.hotwave.io_taskruns.yaml
+- bases/devops.hotwave.io_actions.yaml
+- bases/devops.hotwave.io_templates.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 
 patchesStrategicMerge:

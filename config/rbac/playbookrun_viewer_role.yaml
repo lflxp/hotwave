@@ -5,7 +5,7 @@ metadata:
   name: playbookrun-viewer-role
 rules:
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - playbookruns
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - playbookruns/status
   verbs:

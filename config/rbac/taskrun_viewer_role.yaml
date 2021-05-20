@@ -5,7 +5,7 @@ metadata:
   name: taskrun-viewer-role
 rules:
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - taskruns
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - taskruns/status
   verbs:

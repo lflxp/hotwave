@@ -1,6 +1,6 @@
-// Package v1alpha1 contains API Schema definitions for the hotwave.io v1alpha1 API group
+// Package v1alpha1 contains API Schema definitions for the devops v1alpha1 API group
 // +kubebuilder:object:generate=true
-// +groupName=hotwave.io.hotwave.io
+// +groupName=devops.hotwave.io
 package v1alpha1
 
 import (
@@ -10,7 +10,7 @@ import (
 
 var (
 	// GroupVersion is group version used to register these objects
-	GroupVersion = schema.GroupVersion{Group: "hotwave.io.hotwave.io", Version: "v1alpha1"}
+	GroupVersion = schema.GroupVersion{Group: "devops.hotwave.io", Version: "v1alpha1"}
 
 	// SchemeBuilder is used to add go types to the GroupVersionKind scheme
 	SchemeBuilder = &scheme.Builder{GroupVersion: GroupVersion}

@@ -31,14 +31,14 @@ kubebuilder create webhook --group test --version v1beta1 --kind Test --defaulti
 ```shell
 go mod init hotwave
 kubebuilder init --domain hotwave.io --license mit --owner "lflxp for China"
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind Playbook
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind Pipeline
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind PipelineRun
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind PlaybookRun
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind Task
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind TaskRun
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind Action
-kubebuilder create api --group hotwave.io --version v1alpha1 --kind Template
+kubebuilder create api --group devops --version v1alpha1 --kind Playbook
+kubebuilder create api --group devops --version v1alpha1 --kind Pipeline
+kubebuilder create api --group devops --version v1alpha1 --kind PipelineRun
+kubebuilder create api --group devops --version v1alpha1 --kind PlaybookRun
+kubebuilder create api --group devops --version v1alpha1 --kind Task
+kubebuilder create api --group devops --version v1alpha1 --kind TaskRun
+kubebuilder create api --group devops --version v1alpha1 --kind Action
+kubebuilder create api --group devops --version v1alpha1 --kind Template
 ```
 
 # version

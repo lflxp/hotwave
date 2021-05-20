@@ -14,7 +14,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	hotwaveiov1alpha1 "hotwave/api/v1alpha1"
+	devopsv1alpha1 "hotwave/api/v1alpha1"
 	// +kubebuilder:scaffold:imports
 )
 
@@ -46,13 +46,13 @@ var _ = BeforeSuite(func(done Done) {
 	Expect(err).ToNot(HaveOccurred())
 	Expect(cfg).ToNot(BeNil())
 
-	err = hotwaveiov1alpha1.AddToScheme(scheme.Scheme)
+	err = devopsv1alpha1.AddToScheme(scheme.Scheme)
 	Expect(err).NotTo(HaveOccurred())
 
-	err = hotwaveiov1alpha1.AddToScheme(scheme.Scheme)
+	err = devopsv1alpha1.AddToScheme(scheme.Scheme)
 	Expect(err).NotTo(HaveOccurred())
 
-	err = hotwaveiov1alpha1.AddToScheme(scheme.Scheme)
+	err = devopsv1alpha1.AddToScheme(scheme.Scheme)
 	Expect(err).NotTo(HaveOccurred())
 
 	// +kubebuilder:scaffold:scheme

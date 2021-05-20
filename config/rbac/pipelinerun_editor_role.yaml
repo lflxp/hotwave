@@ -5,7 +5,7 @@ metadata:
   name: pipelinerun-editor-role
 rules:
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - pipelineruns
   verbs:
@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - pipelineruns/status
   verbs:

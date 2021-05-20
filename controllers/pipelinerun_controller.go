@@ -8,7 +8,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	hotwaveiov1alpha1 "hotwave/api/v1alpha1"
+	devopsv1alpha1 "hotwave/api/v1alpha1"
 )
 
 // PipelineRunReconciler reconciles a PipelineRun object
@@ -18,8 +18,8 @@ type PipelineRunReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=hotwave.io.hotwave.io,resources=pipelineruns,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=hotwave.io.hotwave.io,resources=pipelineruns/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=devops.hotwave.io,resources=pipelineruns,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=devops.hotwave.io,resources=pipelineruns/status,verbs=get;update;patch
 
 func (r *PipelineRunReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = context.Background()
@@ -32,6 +32,6 @@ func (r *PipelineRunReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error)
 
 func (r *PipelineRunReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
-		For(&hotwaveiov1alpha1.PipelineRun{}).
+		For(&devopsv1alpha1.PipelineRun{}).
 		Complete(r)
 }

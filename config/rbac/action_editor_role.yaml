@@ -5,7 +5,7 @@ metadata:
   name: action-editor-role
 rules:
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - actions
   verbs:
@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - actions/status
   verbs:

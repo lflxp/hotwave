@@ -10,7 +10,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	hotwaveiov1alpha1 "hotwave/api/v1alpha1"
+	devopsv1alpha1 "hotwave/api/v1alpha1"
 	"hotwave/controllers"
 	// +kubebuilder:scaffold:imports
 )
@@ -23,7 +23,7 @@ var (
 func init() {
 	_ = clientgoscheme.AddToScheme(scheme)
 
-	_ = hotwaveiov1alpha1.AddToScheme(scheme)
+	_ = devopsv1alpha1.AddToScheme(scheme)
 	// +kubebuilder:scaffold:scheme
 }
 

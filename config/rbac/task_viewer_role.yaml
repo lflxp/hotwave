@@ -5,7 +5,7 @@ metadata:
   name: task-viewer-role
 rules:
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - tasks
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - hotwave.io.hotwave.io
+  - devops.hotwave.io
   resources:
   - tasks/status
   verbs:

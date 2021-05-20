@@ -1,28 +1,28 @@
 domain: hotwave.io
 repo: hotwave
 resources:
-- group: hotwave.io
+- group: devops
   kind: Playbook
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: Pipeline
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: PipelineRun
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: PlaybookRun
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: Task
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: TaskRun
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: Action
   version: v1alpha1
-- group: hotwave.io
+- group: devops
   kind: Template
   version: v1alpha1
 version: "2"
