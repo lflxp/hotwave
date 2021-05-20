@@ -1,0 +1,24 @@
+# permissions for end users to edit playbookruns.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: playbookrun-editor-role
+rules:
+- apiGroups:
+  - hotwave.io.hotwave.io
+  resources:
+  - playbookruns
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - hotwave.io.hotwave.io
+  resources:
+  - playbookruns/status
+  verbs:
+  - get
