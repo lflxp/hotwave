@@ -1,6 +1,8 @@
 package v1alpha1
 
 import (
+	"hotwave/model/roles"
+
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
@@ -13,7 +15,9 @@ type TaskSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Task. Edit Task_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Foo   string        `json:"foo,omitempty"`
+	Basic roles.RoleLC  `json:"basic"`
+	Task  []interface{} `json:"task,omitempty"`
 }
 
 // TaskStatus defines the observed state of Task

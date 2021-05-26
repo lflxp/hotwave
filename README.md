@@ -12,6 +12,10 @@ kubebuilder create webhook --group test --version v1beta1 --kind Test --defaulti
 > https://blog.51cto.com/u_13630803/2154192
 > http://www.ansible.com.cn/docs/playbooks_intro.html
 > https://www.cnblogs.com/wxzhe/p/10386649.html
+> https://www.jianshu.com/p/116812c86f77
+> https://developer.51cto.com/art/202105/661972.htm
+> https://developer.51cto.com/art/202105/662512.htm
+> https://pdf.us/2019/04/15/3250.html
 
 # 架构
 
@@ -39,6 +43,7 @@ kubebuilder create api --group devops --version v1alpha1 --kind Task
 kubebuilder create api --group devops --version v1alpha1 --kind TaskRun
 kubebuilder create api --group devops --version v1alpha1 --kind Action
 kubebuilder create api --group devops --version v1alpha1 --kind Template
+make manifests generate
 ```
 
 # version
